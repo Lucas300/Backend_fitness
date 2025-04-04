@@ -1,77 +1,50 @@
-# Aplicativo Fitness
-Projeto 03 do Grupo 06 da Turma 79 Java do Bootcamp Generation
+# 🏋️💪 PraçaFit
 
-INTEGRANTES
-<br>Guilherme Kaludin
-<br>João Oliveira
-<br>Juliana Monteiro
-<br>Lucas Daniel
-<br>Tainá Lara
+O **PraçaFit** é um aplicativo fitness voltado para auxiliar usuários no cálculo do **IMC** e no uso correto dos **aparelhos de praças públicas**. Nosso objetivo é incentivar um estilo de vida mais saudável, fornecendo informações acessíveis e intuitivas sobre exercícios ao ar livre.
 
+## 👀 Links
 
-PROJETO INTEGRADOR
-ESCOPO DO PROJETO
-
-Tema: Aplicativo Fitness
-
-Título do Projeto e Modelo de Negócio escolhido:  
-Aplicativo Fitness
-<br>Uma plataforma fitness para cálculo do IMC, onde usuários podem inserir seus dados e receber uma classificação baseada no índice de massa corporal.
+- 🔗 **Site:** [https://pracafit.netlify.app](https://pracafit.netlify.app)
+- 🔗 **Frontend:** [https://github.com/Lucas300/Frontend_fitness](https://github.com/Lucas300/Frontend_fitness)
 
 
-Descrição Geral do Projeto: 
-<br>O projeto aplicativo fitness é uma aplicação desenvolvida em Spring Boot que gerencia as operações relacionadas ao cálculo do IMC, permitindo que usuários cadastrem seus exercícios e acompanhem sua evolução. O Sistema conta com um mecanismo de autenticação, onde cada usuário precisa se identificar por meio de um nome de usuário e senha para acessar a plataforma.
+## ✨ Funcionalidades
 
-Descrição da Entidade/Model foi criada e seus atributos: 
-<br>Criamos as Model’s Usuário, Exercicio e Categoria.
-<br>(tb_usuario) com os atributos id, nome, usuario, senha, foto, peso, altura, e idade.
-<br>(tb_exercicio) com os atributos id,  nome, descricao, aparelho, serie, repeticao, FK id usuario e FK id categoria.
-<br>(tb_categoria) com os atributos id, tipo e grupo.
+- 📊 **Cálculo de IMC:** Informe seu peso e altura para calcular o índice de massa corporal.
+- 🔮 **Dicas de Exercícios:** Explicação detalhada sobre como usar cada equipamento da praça corretamente.
+- 🔧 **Acompanhamento:** Possibilidade de registrar medidas e acompanhar a evolução.
+- 📲 **Responsivo:** Compatível com dispositivos móveis para melhor experiência de usuário.
 
+## 👨‍💻 Tecnologias Utilizadas
 
-### Funcionalidades Principais (CRUD) implementadas
-Criamos as seguintes funcionalidades:
-<br>Getters and Setters
-<br>findAll()
-<br>findById()
-<br>findAllByNome()
-<br>get(),
-<br>post()
-<br>put()
-<br>delete()
-<br>Método utilitário para calcular o IMC com base no peso e altura do usuário:
-<br>calcularIMC()
-<br>Método utilitário para classificar o IMC do usuário:
-<br>classificarIMC()
-<br>Métodos de segurança:
-<br>userDetailsService()
-<br>passwordEncoder()
-<br>authenticationManager
-<br>filterChain(HttpSecurity http)
-<br>extractAllClaims(String token)
-<br>extractUsername(String token)
-<br>extractExpiration(String token)
-<br>isTokenExpired(String token)
-<br>generateToken(String username)
-<br>validateToken(String token, UserDetails details)
-<br>getAuthorities()
-<br>isAccountNonExpired()
-<br>isAccountNonLocked()
-<br>isCredentialsNonExpired()
+### 🛠️ **Backend**
+- Java + Spring Boot
+- Spring Security (Autenticação e Autorização)
+- MySQL
+- JPA/Hibernate
+- Banco de Dados: PostgreSQL
+- Render (Hospedagem do Backend e Banco de Dados)
 
 
-### Tecnologias Utilizadas (banco de dados e backend):
-Java 17+ 
-<br>Maven Plugin
-<br>MySql Driver
-<br>JPA/Hibernate
-<br>Spring Boot Dev Tools
-<br>Spring Web
-<br>Spring Validation
-<br>Spring Security
-<br>JSON Web Token
-<br>Swagger
-<br>PostgreSQL
-<br>Docker
-<br>Render
+### 🌐 **Frontend**
+- React
+- Styled Components
+- Tailwind CSS
+- React Router
+- Axios
+- AuthContext (Autenticação com Context API)
+- Netlify (Hospedagem)
 
+
+## 💾 Hospedagem
+- 🌍 **Frontend:** Hospedado no Netlify
+- 🛠️ **Backend & Banco de Dados:** Hospedado no Render
+
+
+
+Feito com ❤️ por: 
+- Lucas(EU)
+- [Guilherme](https://github.com/GuilhermeKaludin)
+- [João](https://github.com/jloliveira95)
+- [Juliana](https://github.com/JulianaMonteiro4)
+- [Tainá](https://github.com/tainalara)
